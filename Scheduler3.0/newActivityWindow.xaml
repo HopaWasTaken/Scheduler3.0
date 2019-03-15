@@ -1,0 +1,30 @@
+﻿ <Window x:Class="Scheduler3._0.newActivityWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scheduler3._0"
+        mc:Ignorable="d"
+        Title="Create New Activity" Height="300" Width="400" Closing="Window_Closing">
+    <Grid>
+        <TextBlock x:Name="blockActivityName" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Activity Name:" VerticalAlignment="Top"/>
+        <TextBox x:Name="BoxActivityName" HorizontalAlignment="Left" Height="23" Margin="10,31,0,0" TextWrapping="Wrap" Text="Type here..." VerticalAlignment="Top" Width="120" TextChanged="BoxActivityName_TextChanged"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Color:" VerticalAlignment="Top"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="198,80,0,0" VerticalAlignment="Top" Width="33" Height="33" Background="#C1607A" Click="button_Click"/>
+        <Button x:Name="button_Copy" HorizontalAlignment="Left" Margin="46,80,0,0" VerticalAlignment="Top" Width="33" Height="33" Background="#6a92dd" Click="button_Click"/>
+        <Button x:Name="button_Copy1" HorizontalAlignment="Left" Margin="122,80,0,0" VerticalAlignment="Top" Width="33" Height="33" Background="#68979B" Click="button_Click"/>
+        <Button x:Name="button_Copy2" HorizontalAlignment="Left" Margin="274,80,0,0" VerticalAlignment="Top" Width="33" Height="33" Background="#e8af9d" Click="button_Click"/>
+        <Button x:Name="button_Copy3" HorizontalAlignment="Left" Margin="8,80,0,0" VerticalAlignment="Top" Width="33" Height="33" Background="#2F3F73" Click="button_Click"/>
+        <Button x:Name="button_Copy4" HorizontalAlignment="Left" Margin="350,80,0,0" VerticalAlignment="Top" Width="33" Height="33" Background="#FFEBAA" Click="button_Click"/>
+        <Button x:Name="button_Copy5" HorizontalAlignment="Left" Margin="312,80,0,0" VerticalAlignment="Top" Width="33" Height="33" Background="#D4BB6A" Click="button_Click"/>
+        <Button x:Name="button_Copy6" HorizontalAlignment="Left" Margin="84,80,0,0" VerticalAlignment="Top" Width="33" Height="33" Background="#3ead95" Click="button_Click"/>
+        <Button x:Name="button_Copy7" HorizontalAlignment="Left" Margin="160,80,0,0" VerticalAlignment="Top" Width="33" Height="33" Background="#9A334F" Click="button_Click"/>
+        <Button x:Name="button_Copy9" HorizontalAlignment="Left" Margin="236,80,0,0" VerticalAlignment="Top" Width="33" Height="33" Background="#dd876a" Click="button_Click"/>
+        <TextBlock x:Name="BlockStartTime" HorizontalAlignment="Left" Margin="10,118,0,0" TextWrapping="Wrap" Text="Start Time:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="BlockEndTime" HorizontalAlignment="Left" Margin="201,118,0,0" TextWrapping="Wrap" Text="End Time:" VerticalAlignment="Top"/>
+        <Button x:Name="CreateButton" Content="Create!" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="372" Height="35" Click="CreateButton_Click"/>
+        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Width="372" Height="35" Click="CancelButton_Click"/>
+        <ComboBox x:Name="selectStartTime" Margin="71,118,0,0" SelectionChanged="selectStartTime_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top" Width="123"/>
+        <ComboBox x:Name="selectEndTime" Margin="258,118,0,0" SelectionChanged="selectEndTime_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124"/>
+    </Grid>
+</Window>

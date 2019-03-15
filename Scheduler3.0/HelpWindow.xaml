@@ -1,0 +1,28 @@
+﻿<Window x:Class="Scheduler3._0.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scheduler3._0"
+        mc:Ignorable="d"
+        Title="Help Window" Height="450" Width="600">
+    <Grid>
+        <ScrollViewer HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="582">
+            <Grid>
+                <TextBlock Text="Creating An Activity:" FontSize="17" FontWeight="Bold" Margin="0,0,0,440"/>
+                <TextBlock Text="Editing An Activity:" FontSize="17" FontWeight="Bold" Margin="0,113,0,365"/>
+                <TextBlock FontSize="17" Margin="10,23,10,388" TextWrapping="Wrap">
+                    <Run Text="Click and drag anywhere on the grid in start drawing an activity"/>
+                    <LineBreak/><Run Text="Release to open a new window that will allow you to edit the name, time and color of this activity"/>
+                    <LineBreak/><Run Text="Schedulr will automatically notify you at the start time of each activity"/>
+                </TextBlock>
+                <TextBlock FontSize="17" Margin="10,136,10,318" TextWrapping="Wrap" Text="Click on an activity to open a new window that will allow you to edit the name, start and end time, and color of this activity, or delete it if necessary. "/>
+                <TextBlock Text="Reordering Activities:" FontSize="17" FontWeight="Bold" Margin="0,209,0,295"/>
+                <TextBlock FontSize="17" Margin="10,232,10,249" TextWrapping="Wrap" Text="Click and drag the name of an activity in order to move it. Moving it into another activity will cause them to switch places."/>
+                <TextBlock Text="Saving and Loading Activities:" FontSize="17" FontWeight="Bold" Margin="0,278,0,270"/>
+                <TextBlock FontSize="17" Margin="10,301,10,180" TextWrapping="Wrap"><Run Text="To save an activity, press File -&gt; Save."/><LineBreak/><Run Text="To load an activity, press File -&gt; Load. "/><LineBreak/><Run Text="You must save and load through Schedulr, the save files will open in a text editor.  "/></TextBlock>
+                <TextBlock Text="Having Problems? Email me at HopaWasTaken@gmail.com" FontSize="17" FontWeight="Bold" Margin="0,396,0,152"/>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>
